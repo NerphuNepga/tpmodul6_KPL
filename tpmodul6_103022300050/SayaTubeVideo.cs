@@ -28,7 +28,7 @@ namespace tpmodul6_103022300050
 
         public void IncreasePlayCount(int playCount)
         {
-            Debug.Assert(playCount <= 0 && playCount > 10000000, "Play Count harus kurang dari 10.000.000 dan tidak kurang dari 0.");
+            Debug.Assert(playCount >= 0 && playCount <= 10000000, "Play Count harus kurang dari 10.000.000 dan tidak kurang dari 0.");
             try
             {
                 checked
